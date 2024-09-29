@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+}
+
+.container nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.container nav .logo img {
+  height: 50px;
+}
+
+.container nav .menus ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container nav .menus ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.container nav .login button {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.container nav .menus ul li a:hover,
+.container nav .login button:hover {
+  background-color: #8acaf4;
+  border-radius: 50px;
+  color: white;
+}
+
+.navbar-collapse.show {
+  max-height: 1000px; /* Adjust as per your content */
+}
+
+/* custom font family */
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.details {
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+}
+
+/* airCraft */
+
+.a220,
+.a320,
+.a380,
+.a350 {
+  position: absolute;
+  color: #000000;
+}
+
+.a220-det,
+.a320-det,
+.a380-det,
+.a350-det {
+  position: absolute;
+  color: #000000;
+}
+
+/* footer */
+
+.bg {
+  background-color: #333333;
+}
+
+.bg h5 {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.bg a {
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+.bg img {
+  height: 30px;
+}
+
+.bg .det {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.bg .det1 {
+  color: #a9a9a9;
+  font-size: 12px;
+  margin-top: -13px;
+}
+
+.bg input {
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 6px;
+  width: 60%;
+  border: none;
+  outline: none;
+}
+
+.bg .btn {
+  color: #ffffff;
+}
+
+.bg .icons a {
+  text-decoration: none;
+}
+
+.bg .icons i {
+  color: #ffffff;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 26px;
+}
+
+/* safety */
+
+.card-title {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .details {
+    font-size: 0.875rem;
+    text-align: justify;
+  }
+
+  .craftImg {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .craftImg img {
+    width: 100%;
+    height: auto;
+  }
+
+  .a220,
+  .a320,
+  .a380,
+  .a350 {
+    top: 35%;
+    left: 10%;
+  }
+
+  .a220-det,
+  .a320-det,
+  .a380-det,
+  .a350-det {
+    top: 48%;
+    left: 10%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .details {
+    font-size: 1rem;
+  }
+
+  .craftImg {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .craftImg img {
+    width: 100%;
+    height: auto;
+  }
+
+  .a220,
+  .a320,
+  .a380,
+  .a350 {
+    top: 40%;
+    left: 10%;
+  }
+
+  .a220-det,
+  .a320-det,
+  .a380-det,
+  .a350-det {
+    top: 50%;
+    left: 10%;
+  }
+
+  /* nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #ffffff;
+    gap: 0;
+    overflow: hidden;
+  }
+  nav ul li {
+    padding: 12px;
+  }
+  .menu-icon {
+    display: block;
+  } */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .details {
+    font-size: 1rem;
+  }
+
+  .craftImg {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .a220,
+  .a320,
+  .a380,
+  .a350 {
+    top: 45%;
+    left: 12%;
+  }
+
+  .a220-det,
+  .a320-det,
+  .a380-det,
+  .a350-det {
+    top: 55%;
+    left: 12%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 993px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .details {
+    font-size: 1rem;
+  }
+
+  .craftImg {
+    margin-top: auto;
+    margin-bottom: -80px;
+  }
+
+  .a220,
+  .a320,
+  .a380,
+  .a350 {
+    top: 48%;
+    left: 15%;
+  }
+
+  .a220-det,
+  .a320-det,
+  .a380-det,
+  .a350-det {
+    top: 57%;
+    left: 15%;
+  }
+}

@@ -1,0 +1,14 @@
+i {
+  cursor: pointer;
+}
+.destination-image {
+  height: 200px; /* Adjust this value to your desired height */
+}
+.underline {
+  width: 100px; /* Adjust the width as per your requirement */
+  height: 3px;
+  background-color: #d61b3c; /* Adjust the color as per your design */
+  margin: 0 auto;
+  margin-top: -40px;
+  margin-bottom: 20px; /* Adjust the margin-bottom as per your design */
+}
